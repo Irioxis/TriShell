@@ -33,6 +33,24 @@ function tri_R()
     fi
 }
 
+function tri_d_affichage(){
+    toprint=" " 
+    for i in $@
+    do 
+        toprint "$i \n $toprint"
+    done
+    echo "$toprint"    
+}
+
+function tri_d(){
+    toprint=" " 
+    for i in $@
+    do 
+        toprint "$i \n $toprint"
+    done
+      
+}
+
 # tri
 for i in $@
 do
